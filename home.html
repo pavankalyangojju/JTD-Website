@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #nav{
+            display: flex;  
+            justify-content: space-between;
+        }
+
+        #btns{
+            margin-right: 10%;
+            margin-top: 30px;
+            /* font-size: 25px; */
+        }
+        #img1{
+            margin-left: 10%;
+        }
+        #btns button:nth-child(1){
+            border: none;
+            background: none;
+            font-size: 20px;
+
+        }
+        #btns button:nth-child(2){
+            border: none;
+            background: none;
+            font-size: 20px;
+
+        }        
+        #btns button:nth-child(3){
+            border: none;
+            background: none;
+            font-size: 20px;
+
+        }        
+        #btns button:nth-child(4){
+            border: none;
+            background: none;
+            font-size: 20px;
+
+        }        
+        #btns button:nth-child(5){
+            border: none;
+            background: none;
+            font-size: 20px;
+
+        }
+        #btns button:nth-child(6){
+            background-color: rgb(236,146,11);
+            color: white;
+            border: none;
+            width: 120px;
+            height: 40px;
+            border-radius: 5%;
+            font-size: 15px;
+
+            
+            /* background: none; */
+        }
+        #btns button:hover{
+            cursor: pointer;
+        }
+        #btns button:nth-child(1):hover{
+            color: blue;
+        }
+        #btns button:nth-child(2):hover{
+            color: blue;
+        }        
+        #btns button:nth-child(3):hover{
+            color: blue;
+        }        
+        #btns button:nth-child(4):hover{
+            color: blue;
+        }        
+        #btns button:nth-child(5):hover{
+            color: blue;
+        }
+
+        #marquee{
+            margin-top: 2%;
+            background-color: yellow;
+            height: 50px;
+            
+        }
+        #hometext{
+            width: 100%;
+            height: 650px;
+            margin: auto;
+            text-align: center;
+            margin-top: 3%;
+            background-image: url("https://uploads-ssl.webflow.com/61bd9768ab9f2724adfaa5c2/61bda5089ef6a8db2584e223_banner-texture.gif");
+            font-size: 30px;
+            /* border: 1px solid red; */
+        }
+        h1{
+            font-family: 'Roboto', sans-serif;
+            color: blue;
+        }
+        #hometext p #our{
+            font-weight: bolder;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+        }
+        .lm{
+            width: 200px;
+            height: 50px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(236,146,11);
+        }
+        #ourmission p:nth-child(1){
+            color: rgb(250, 79, 6);
+            
+        }
+        #ourmission{
+            margin-left: 50px;
+        }
+        #bfg{
+            display: flex;
+            margin-left: 2%;
+        }
+        #img2,#img3,#img4{
+            width: 80%;
+        }
+        #programs #img5{
+            width: 80%;
+        }
+        #img5div{
+            margin-left: 2%;
+            margin-top: 2%;
+            width: 32%;
+            height: 250px;
+        }
+        #programs{
+            margin-top: 3%;
+        }
+        #impact #p1{
+            color: rgb(236,146,11);
+
+        }
+        #impact{
+            margin-left: 2%;
+            margin-top: 10%;
+
+        }
+        #impact1{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+
+        }
+        #impact2{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+
+
+        }
+        #impact3{
+            transform: translateX(100px);
+            margin-top: 20px;
+        }
+        .idiv{
+            width: 6px;
+            height: 36px;
+            background-color: rgb(236,146,11);
+            transform: translateX(-10px);
+            margin-top: 20px;
+
+            
+
+
+        }
+        .idiv0{
+            display: flex;
+
+        }
+        #wall{
+            margin-left: 2%;
+        }
+        #wall1{
+            color: #fa9400;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        #wall2{
+            color: #444444;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+
+        }
+        .h5{
+            color: #333333;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            font-style: normal;
+            
+        }
+        .p{
+            color: #838080;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            font-style: normal;
+            
+        }
+        #about{
+            display: flex;
+            justify-content: space-between;
+        }
+        #about2{
+            display: flex;
+            justify-content: space-between;
+        }
+        #what{
+            margin-left: 2%;
+        }
+        .aa{
+            border: 1px solid #fa9400;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #fa9400;
+            transform: translateX(-15px);
+            margin-top: 20px;
+        }
+        .about1{
+            display: flex;
+
+        }
+        #ourstory{
+            color: #fa9400;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 16px;
+            margin-left: 2%;
+
+
+        }
+        #ourstory2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+            color: #333333;
+        }
+        #ed{
+            font-weight: bolder;
+        }
+        #gphoto{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #img00{
+            border-radius: 15px;
+        }
+        #gph{
+            display: flex;
+            
+        }
+        #dj1{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 16px;
+            color: #333333;
+        }
+        #dj2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 13px;
+            color: #838080;
+            transform: translateY(-10px);
+        }
+        #dj3{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 16px;
+            color: #333333;
+        }
+        #dj4{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 16px;
+            color: #333333;
+        }
+        #gph1{
+            border: 1px solid #fa9400;
+            width: 50px;
+            height: 2px;
+            transform: translateX(-10px);
+            margin-top: 25px;
+            background-color: #fa9400;
+
+        }
+        #dj button{
+            width: 150px;
+            height: 40px;
+        }
+        #dj button:hover{
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+        #ourS{
+            color: #fa9400;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 20px;
+            font-size: 16px;
+            font-weight: 500;
+
+
+        }
+        .fir{
+            width: 5px;
+            height: 20px;
+            border: 1px solid #060606;
+            transform: translateY(40px);
+            margin-left: -15px;
+            background-color: #030302;
+        }
+        #ourStory{
+            margin-left: 2%;
+        }
+        #ourS1{
+            color: #444444;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 36px;
+
+
+        }
+        #first{
+            display: flex;
+            justify-content: space-between;
+
+            
+        }
+        #first1{
+            display: flex;
+
+        }
+        #DOING{
+            margin-left: 200px;
+        }
+        .first1234{
+            font-style: normal;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #272727;
+
+        }
+        .first12345{
+            font-style: normal;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+            color: #333333;
+        }
+        #footer{
+            display: flex;
+        }
+        #footer1{
+            display: flex;
+            margin-top: 2%;
+            margin-left: 40%;
+        }
+        #footimg{
+            margin-left: 2%;
+            margin-top: 2%;
+        }
+        #footer1 div{
+            margin-left: 120px;
+        }
+        #footer1 div a{
+            color: #272727;
+            text-decoration: none;
+            font-style: normal;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #444444;
+        }
+        #footer1 div a:hover{
+            text-decoration: underline;
+
+        }
+        #footer1 div h5{
+            text-decoration: none;
+            font-style: normal;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #333333;
+            
+        }
+        #bfg div:hover{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 8px;
+        }
+        #img5div:hover{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 8px;
+        }
+
+
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- navBar for logo and <buttons> -->
+
+    <div id="nav">
+        <div>
+            <img id="img1" src="https://uploads-ssl.webflow.com/61bd9768ab9f2724adfaa5c2/61bd97b275b5f5059378e9c2_JTDlogo.png" alt="">
+
+        </div>
+        <div id="btns">
+            <button>Home</button>
+            <button>Programs</button>
+            <button>Impact</button>
+            <button>About</button>
+            <button>Contact</button>
+            <button>DONATE NOW</button>
+
+
+            <!-- open side barrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+
+            <span style="font-size:30px;cursor:pointer" id="span1" onclick="openNav()">&#9776;</span>
+
+            <!-- open content side barrrrrrrrrrrrrrrrrr -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="#">Home</a>
+                  <a href="#">Programs</a>
+                  <a href="#">Impact</a>
+                  <a href="#">About</a>
+                  <a href="#">Contact</a>
+                  <a href="#">DONATE NOW</a>
+
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <!-- Hello All, The site is still Under Construction. Thank You -->
+
+    
+    <div id="marquee">
+        <marquee  direction="right">
+            <h3>            Hello All, The site is still Under Construction. Thank You
+            </h3>
+
+        </marquee>
+
+    </div>
+
+    <!-- hometext -->
+
+    <div id="hometext">
+        <p>We are trying to make an impact by</p>
+        <h1>Democratise + Social Enterprise + Ed-Tech</h1>
+        <p><span id="our">Our Vision</span> - 1000 rural students draw a avg. salary of 25 LPA by 2031</p>
+        <button class="lm">LEARN MORE</button>
+    </div>
+
+    <!-- ourmission -->
+
+    <div id="ourmission">
+        <p>OUR MISSION</p>
+        <h1>Every child must be best version of themselves</h1>
+        <p>It all started with a goal - to democratise educational opportunities to every</p>
+        <p>deserving child. Here’s some of our programs.</p>
+
+    </div>
+
+    <!-- programs -->
+
+    <div id="programs">
+        <div id="bfg">
+            <div class="img222">
+                <img id="img2" src="https://uploads-ssl.webflow.com/61bd9768ab9f2724adfaa5c2/61bdb5ccbc5fcadbb624ea14_JTB%20-%202x%20.png" alt="">
+
+                <h2>Joining The Bits</h2>
+                <p>Joining the Bits is a 4 year free of cost online engineering program <br> on par with engineering curriculum of A-lister university.</p>
+
+            </div>
+            <div class="img33">
+                <img id="img3" src="https://uploads-ssl.webflow.com/61bd9768ab9f2724adfaa5c2/61bdb5ccdd0953ced5d499f7_JTF%20-%202x.png" alt="">
+                <h2>Joining The Force</h2> 
+                <p>Joining the Forces is an program which helps students realise their <br> dream of  joining the Armed Forces, Navy & Airforce</p>           
+            </div>
+            <div class="img44">
+                <img id="img4" src="https://uploads-ssl.webflow.com/61bd9768ab9f2724adfaa5c2/61bdb701c0cec13e65a3ae14_SFG.png" alt="">
+                <h2>Sports For Girls</h2>
+                <p>Sports for girls envisions providing opportunities to 2000 girls play <br> a sport of their choice</p>
+            </div>
+        </div>
+        <div id="img5div">
+            <img id="img5" src="https://uploads-ssl.webflow.com/61bd9768ab9f2724adfaa5c2/61bdb5bcea186db0b215bcca_JTSS%20-%202x.png" alt="">
+            <h2>Joining the Sapta Swaras</h2>
+            <p>Joining the Sapta swaras is a free carnatic music learning program. <br> Currently the focus is on carnatic vocals, violin, flute and <br> bharatanatyam.</p>
+        </div>
+    </div>
+
+
+    <!-- IMPACT -->
+
+    <div id="impact">
+        <p id="p1">IMPACT</p>
+        <h1>Achievements</h1>
+        <p id="p2">We're focused on building the best community for the deserving students. <br> A lifetime network that you can rely upon for support.</p>
+
+    </div>
+
+    <!-- impact more divs -->
+
+    <div id="mainDiv">
+        <div id="impact1">
+            <div class="idiv0">
+                <div class="idiv"></div>
+                <div>
+                    <h1>175</h1>
+                    <p>SCHOLARSHIPS</p>
+                    <p>For context, we have provided scholarship for 175 students <br> as of till date</p>
+                </div>
+            </div>
+            <div class="idiv0">
+                <div class="idiv"></div>
+                <div>
+                    <h1>12</h1>
+                    <p>SOFTWARE DEVELOPERS</p>
+                    <p>We have 12 students working as software developers in tier <br> 2 companies</p>
+                </div>
+            </div>
+            <div class="idiv0">
+                <div class="idiv"></div>
+                <div>
+                    <h1>40</h1>
+                    <p>ENGINEERING PROGRAM</p>
+                    <p>40 Students enrolled in free online engineering program <br> Joining the bits</p>
+                </div>
+            </div>
+        </div>
+        <!-- 22222222222222222222222222222222 -->
+        <div id="impact2">
+            <div class="idiv0">
+                <div class="idiv"></div>
+                <div>
+                    <h1>10</h1>
+                    <p>COMPUTER LABS</p>
+                    <p>Facilitated 10 schools with computer labs with total of 150 <br> computers</p>
+                </div>
+            </div>
+            <div class="idiv0">
+                <div class="idiv"></div>
+                <div>
+                    <h1>More</h1>
+                    <p>SPORTS OPPORTUNITIES FOR GIRLS</p>
+                    <p>2 football playgrounds, 2 cricket training facilities, 1 hockey <br> playground, 1 tennis court and more</p>
+                </div>
+            </div>
+            <div class="idiv0">
+                <div class="idiv"></div>
+                <div>
+                    <h1>40</h1>
+                    <p>MILITARY TRAINING FACILITY</p>
+                    <p>40 students training to join army at a military training <br> facility built by JTD.</p>
+                </div>
+            </div>
+        </div>
+            
+        <!-- 3333333333333333333333333 -->
+        <div id="impact3">
+            <div class="idiv0">
+                <div class="idiv"></div>
+                <div>
+                    <h1>50</h1>
+                    <p>JTD MUSIC PROGRAM</p>
+                    <p>50 students learning ( violin, flute, carnatic music and <br> bharatanatyam through Joining the Sapta Swaras a JTD <br> music program )</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- wall of love -->
+    <div id="wall">
+        <p id="wall1">WALL OF LOVE!!</p>
+        <h1>Thank you for all <br> the support so far!</h1>
+        <p id="wall2">We're focused on building the best community for the deserving students. <br> A lifetime network that you can rely upon for support.</p>
+    </div>
+
+
+    <!-- Listen what our students tell about us!! -->
+
+
+    <div id="what">
+        <h1>Listen what our students tell about us!!</h1>
+        <div class="std">
+            <div id="about">
+                <div class="about1">
+                    <div class="aa"></div>
+                    <div class="h5">
+                        <h5>Sowmitha Bhaskar</h5>
+                        <p class="p">Software Developer</p>
+                        <p>"but also the leap into electronic typesetting, <br> remaining essentially unchanged. It was <br> popularised in the 1960s with the release of <br> Letraset sheets containing Lorem Ipsum <br> passages, and more recently with desktop <br> publishing software like Aldus PageMaker <br> including versions of Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="about1">
+                    <div class="aa"></div>
+                    <div class="h5">
+                        <h5>Sowmitha Bhaskar</h5>
+                        <p class="p">Software Developer</p>
+                        <p>"but also the leap into electronic typesetting, <br> remaining essentially unchanged. It was <br> popularised in the 1960s with the release of <br> Letraset sheets containing Lorem Ipsum <br> passages, and more recently with desktop <br> publishing software like Aldus PageMaker <br> including versions of Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="about1">
+                    <div class="aa"></div>
+                    <div class="h5">
+                        <h5>Sowmitha Bhaskar</h5>
+                        <p class="p">Software Developer</p>
+                        <p>"but also the leap into electronic typesetting, <br> remaining essentially unchanged. It was <br> popularised in the 1960s with the release of <br> Letraset sheets containing Lorem Ipsum <br> passages, and more recently with desktop <br> publishing software like Aldus PageMaker <br> including versions of Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="about1">
+                    <div class="aa"></div>
+                    <div class="h5">
+                        <h5>Sowmitha Bhaskar</h5>
+                        <p class="p">Software Developer</p>
+                        <p>"but also the leap into electronic typesetting, <br> remaining essentially unchanged. It was <br> popularised in the 1960s with the release of <br> Letraset sheets containing Lorem Ipsum <br> passages, and more recently with desktop <br> publishing software like Aldus PageMaker <br> including versions of Lorem Ipsum</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 22222222222222222222222222222222222222 -->
+            <div id="about2">
+                <div class="about1">
+                    <div class="aa"></div>
+                    <div class="h5">
+                        <h5>Sowmitha Bhaskar</h5>
+                        <p class="p">Software Developer</p>
+                        <p>"but also the leap into electronic typesetting, <br> remaining essentially unchanged. It was <br> popularised in the 1960s with the release of <br> Letraset sheets containing Lorem Ipsum <br> passages, and more recently with desktop <br> publishing software like Aldus PageMaker <br> including versions of Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="about1">
+                    <div class="aa"></div>
+                    <div class="h5">
+                        <h5>Sowmitha Bhaskar</h5>
+                        <p class="p">Software Developer</p>
+                        <p>"but also the leap into electronic typesetting, <br> remaining essentially unchanged. It was <br> popularised in the 1960s with the release of <br> Letraset sheets containing Lorem Ipsum <br> passages, and more recently with desktop <br> publishing software like Aldus PageMaker <br> including versions of Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="about1">
+                    <div class="aa"></div>
+                    <div class="h5">
+                        <h5>Sowmitha Bhaskar</h5>
+                        <p class="p">Software Developer</p>
+                        <p>"but also the leap into electronic typesetting, <br> remaining essentially unchanged. It was <br> popularised in the 1960s with the release of <br> Letraset sheets containing Lorem Ipsum <br> passages, and more recently with desktop <br> publishing software like Aldus PageMaker <br> including versions of Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="about1">
+                    <div class="aa"></div>
+                    <div class="h5">
+                        <h5>Sowmitha Bhaskar</h5>
+                        <p class="p">Software Developer</p>
+                        <p>"but also the leap into electronic typesetting, <br> remaining essentially unchanged. It was <br> popularised in the 1960s with the release of <br> Letraset sheets containing Lorem Ipsum <br> passages, and more recently with desktop <br> publishing software like Aldus PageMaker <br> including versions of Lorem Ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- our story -->
+
+    <div id="ourstory">
+        <p id="ourstory1">OUR STORY</p>
+        <p id="ourstory2">JTD is an <span id="ed">Social Enterprise Ed-Tech</span> that wants to <br> democratise educational opportunities to every child.</p>
+    </div>
+
+
+    <!-- group photo -->
+
+    <div id="gphoto">
+        <div>
+            <img id="img00" src="https://uploads-ssl.webflow.com/61bd9768ab9f2724adfaa5c2/61f0dfc9ccb99e61cd7781fe_IMG_20191229_163116-p-1080.jpeg" alt="">
+            
+        </div>
+        <div id="gph">
+            <div id="gph1"></div>
+            <div id="dj">
+                <h5 id="dj1">Dhananjay Ramakrishnappa</h5>
+                <p id="dj2">Founder of Joining The Dots Foundation</p>
+                <p id="dj3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br> Ipsum has been the industry's standard dummy text ever since the 1500s, when an <br> unknown printer took a galley of type and scrambled it to make a type specimen book. <br> It has survived not only five centuries, but also the leap into electronic typesetting, <br> remaining essentially unchanged. It was popularised in the 1960s with the release of <br> Letraset sheets containing Lorem Ipsum passages, and more recently with desktop <br> publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p id="dj4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br> Ipsum has been the industry's standard dummy text ever since the 1500s, when an <br> unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                <button>Read our story</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- OUR STORY            What makes JTD different -->
+    <div id="ourStory">
+        <p id="ourS">OUR STORY</p>
+        <h1>What makes JTD <br>different</h1>
+        <p id="ourS1">We're not driven by money or interested in becoming a mystical unicorn. <br>  We happily cut through the noise and teach designers personally, taking a <br> 100% learn-by-doing approach with a zero powerpoint policy.</p>
+
+        <div class="first11">
+            <div id="first">
+                <div class="first">
+                    <div class="fir"></div>
+                    <div class="first123">
+                        <h5 class="first1234">COMMUNITY FIRST</h5>
+                        <p class="first12345">Our community have supported us since <br> day one and they mean everything to us. <br> Everyday we foster inclusivity.</p>
+                    </div>
+                </div>
+                <div class="first">
+                    <div class="fir"></div>
+                    <div class="first123">
+                        <h5 class="first1234">ALWAYS AUTHENTIC</h5>
+                        <p class="first12345">We hate shady marketing and believe raw <br> authenticity and transparency is the key to <br> any conversation or way of teaching.</p>
+                    </div>
+
+                </div>
+                <div class="first">
+                    <div class="fir"></div>
+                    <div class="first123">
+                        <h5 class="first1234">CELEBRATE DIVERSITY</h5>
+                        <p class="first12345">We listen and learn from our diverse <br> community. It's the diversity of our <br> community that makes Memorisely magic.</p>
+                    </div>
+                </div>
+                <div class="first">
+                    <div class="fir"></div>
+                    <div class="first123">
+                        <h5 class="first1234">POSITIVE ENERGY</h5>
+                        <p class="first12345">We're great believers in emitting positive <br> energy and being a kind human goes a <br> huge way.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 2222222222222222222222222222222222222 -->
+            <div id="first1">
+                <div class="first" id="fir123"> 
+                    <div class="fir"></div>
+                    <div class="first123">
+                        <h5 class="first1234">WAVES BEFORE WEB</h5>
+                        <p class="first12345">If the swell is good, drop everything and <br> surf. Being remote, we encourage our <br> team and tribe to grab time away from the <br> screen.</p>
+                    </div>
+                </div>
+                <div class="first" id="DOING">
+                    <div class="fir"></div>
+                    <div class="first123">
+                        <h5 class="first1234">LEARN-BY-DOING</h5>
+                        <p class="first12345">We're a team who teach and learn-by- <br> doing. We prefer to fail fast than plan and <br> never achieve anything.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        <div id="footimg">
+            <img src="https://uploads-ssl.webflow.com/61bd9768ab9f2724adfaa5c2/61bd97b275b5f5059378e9c2_JTDlogo.png" alt="">
+
+        </div>
+        <div id="footer1">
+            <div>
+                <h2>JTD</h2>
+                <a href="">Our Story</a> <br>
+                <a href="">our Programs</a>
+            </div>
+            <div>
+                <h2>Companies</h2>
+                <a href="">Post A Job</a> <br>
+                <a href="">Text Link</a>
+            </div>
+            <div>
+                <h2>Connect</h2>
+                <a href="">Instagram</a> <br>
+                <a href="">Email us</a> <br>
+                <a href="">Facebook</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.display = "block";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.display = "none";
+    }
+</script>
