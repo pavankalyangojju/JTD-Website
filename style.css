@@ -94,6 +94,7 @@
     }
     #gph1{
         transform: translateX(10px);
+    
        
     }
     .first11{
@@ -179,12 +180,26 @@
         right: 45px;
         font-size: 60px;
     }
+    #img5divv{
+        transform: translateY(-300px);
+        margin-left: 350px;
+    }
+    #footer1{
+        transform: translateX(-200px);
+    }
+
+
 
 }
-@media only screen and (min-width: 0px) and (max-width: 1900px){
+@media only screen and (min-width: 820px) and (max-width: 1900px){
     #myNav{
         display: none;
     }
+    #span1{
+        display: none;
+    }
+
+
 
 }
 
